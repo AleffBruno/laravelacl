@@ -33,6 +33,7 @@ class AuthServiceProvider extends ServiceProvider
         	return $user->id === $post->user_id;
         });
         */
+        
         $permissions = Permission::with('getRoles')->get();
         foreach ($permissions as $permission)
         {

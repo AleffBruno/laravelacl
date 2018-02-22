@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    HOME PAGE DO SITE
+                    <a href="/login">Entrar</a>
                 </div>
 
                 <div class="links">

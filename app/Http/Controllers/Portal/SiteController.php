@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Portal;
 
 use Illuminate\Http\Request;
 use App\Post;
 use Gate;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class SiteController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -16,7 +17,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -26,10 +27,12 @@ class HomeController extends Controller
      */
     public function index(Post $post)
     {
+    	/*
     	$posts = $post->all();
     	//$posts = $post->where('user_id',auth()->user()->id)->get();
-    	
         return view('home',compact('posts'));
+        */
+        return view('portal.home.index');
     }
     
     public function update($idPost)

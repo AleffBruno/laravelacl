@@ -1,6 +1,4 @@
-@extends('layouts.app')
 
-@section('content')
 <div class="container">
     @forelse($posts as $post)
     	@can('view_post',$post)
@@ -13,4 +11,4 @@
     	nenhum post cadastrado
     @endforelse
 </div>
-@endsection
+
